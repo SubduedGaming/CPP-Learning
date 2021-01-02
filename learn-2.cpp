@@ -16,6 +16,13 @@ double power(double base, int exponent) //Declaring function + defined
 }
 
 
+void print_pow(double base, int exponent)
+{
+    double myPower = power(base, exponent);
+    cout << base << " raised to the " << exponent << " power is " << myPower;
+}  
+
+
 
 int main()
 {
@@ -25,8 +32,7 @@ int main()
     cin >> base;
     cout << "What is the exponent? ";
     cin >> exponent;
-    myPower = power(base, exponent);
-    cout << myPower;
+    print_pow(base, exponent);
 }
 
 
